@@ -1,0 +1,35 @@
+data:
+  allowedHosts:
+    hosts:
+      - TODO # Please change to the hostname of the source.
+  registries:
+    oss:
+      enabled: true
+    cloud:
+      enabled: false
+  remoteRegistries:
+    pypi:
+      enabled: true
+      packageName: airbyte-source-treasury-prime
+  connectorBuildOptions:
+    # Please update to the latest version of the connector base image.
+    # https://hub.docker.com/r/airbyte/python-connector-base
+    # Please use the full address with sha256 hash to guarantee build reproducibility.
+    baseImage: docker.io/airbyte/python-connector-base:1.2.0@sha256:c22a9d97464b69d6ef01898edf3f8612dc11614f05a84984451dde195f337db9
+  connectorSubtype: api
+  connectorType: source
+  definitionId: 834568b3-4279-451e-9d4a-eb370289ac63
+  dockerImageTag: 0.1.0
+  dockerRepository: airbyte/source-treasury-prime
+  githubIssueLabel: source-treasury-prime
+  icon: treasury-prime.svg
+  license: MIT
+  name: Treasury Prime
+  releaseDate: TODO
+  releaseStage: alpha
+  supportLevel: community
+  documentationUrl: https://docs.airbyte.com/integrations/sources/treasury-prime
+  tags:
+    - language:python
+    - cdk:low-code
+metadataSpecVersion: "1.0"
